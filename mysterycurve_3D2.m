@@ -17,11 +17,11 @@ figure;plot(x,y,'r.');title('only x-y')
 z=sin(Fold*t)*2+3;
 figure;
 hold on
-plot3(x(1:N/Fold),y(1:N/Fold),z(1:N/Fold),'r.')
-plot3(x(1*N/Fold+1:2*N/Fold),y(1*N/Fold+1:2*N/Fold),z(1*N/Fold+1:2*N/Fold),'g.')
-plot3(x(2*N/Fold+1:3*N/Fold),y(2*N/Fold+1:3*N/Fold),z(2*N/Fold+1:3*N/Fold),'b.')
-plot3(x(3*N/Fold+1:4*N/Fold),y(3*N/Fold+1:4*N/Fold),z(3*N/Fold+1:4*N/Fold),'y.')
-plot3(x(4*N/Fold+1:5*N/Fold),y(4*N/Fold+1:5*N/Fold),z(4*N/Fold+1:5*N/Fold),'m.')
+plot3(x(1:N/Fold),y(1:N/Fold),z(1:N/Fold),'r-','linewidth',3)
+plot3(x(1*N/Fold+1:2*N/Fold),y(1*N/Fold+1:2*N/Fold),z(1*N/Fold+1:2*N/Fold),'g-','linewidth',3)
+plot3(x(2*N/Fold+1:3*N/Fold),y(2*N/Fold+1:3*N/Fold),z(2*N/Fold+1:3*N/Fold),'b-','linewidth',3)
+plot3(x(3*N/Fold+1:4*N/Fold),y(3*N/Fold+1:4*N/Fold),z(3*N/Fold+1:4*N/Fold),'color',[0,0,0],'linestyle','-','linewidth',3)
+plot3(x(4*N/Fold+1:5*N/Fold),y(4*N/Fold+1:5*N/Fold),z(4*N/Fold+1:5*N/Fold),'color',[1.0,0.65,0.0],'linestyle','-','linewidth',3)
 hold off
 
 %% non-z symmetry
